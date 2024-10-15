@@ -13,10 +13,10 @@
 const express = require('express');
 const app = express();
 
-app.set('views', "views");
+app.set('views', "src/views");
 app.set('view engine', "ejs");
 
-const home = require('./routes/home');
+const home = require('./src/routes/home');
 
 app.use('/', home);
 
